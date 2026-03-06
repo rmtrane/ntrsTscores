@@ -1,0 +1,46 @@
+Package: ntrsTscores
+Title: Extending ntrs with T-scores
+Version: 0.0.0.9000
+Authors@R: 
+    person("Ralph", "Møller Trane", , "rmtrane@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7824-1785"))
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RdMacros: Rdpack
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports: 
+    ntrs,
+    S7,
+    Rdpack
+Remotes:
+    rmtrane/ntrs
+Suggests: 
+    testthat (>= 3.0.0),
+    cli
+Config/testthat/edition: 3
+Collate: 
+    'SS.R'
+    'ntrsTscores-package.R'
+    'scale_scores.R'
+    'std_using_tscores.R'
+    'std_using_tscores-ANIMALS.R'
+    'std_using_tscores-REY123.R'
+    'std_using_tscores-REY1REC.R'
+    'std_using_tscores-REY2REC.R'
+    'std_using_tscores-REY3REC.R'
+    'std_using_tscores-REY4REC.R'
+    'std_using_tscores-REY5REC.R'
+    'std_using_tscores-REY6REC.R'
+    'std_using_tscores-REYDLIST.R'
+    'std_using_tscores-REYDREC.R'
+    'std_using_tscores-REYTOTAL.R'
+    'std_using_tscores-TRAILA.R'
+    'std_using_tscores-TRAILB.R'
+    'std_using_tscores-VEG.R'
+    'std_using_tscores-WAIS.R'
+    'zzz.R'
+Depends: 
+    R (>= 3.5)
+LazyData: true
