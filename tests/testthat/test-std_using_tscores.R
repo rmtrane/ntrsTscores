@@ -46,3 +46,43 @@ test_that("std_using_tscores generic alerts when age and educ outside of allowed
     std_using_tscores(ntrs::REYTOTAL(72), age = 91, sex = 1, educ = 8)
   )
 })
+
+
+test_that("std_using_tscores generic alerts when sex not 1s and 2s", {
+  local_reproducible_output()
+
+  expect_error(
+    std_using_tscores(ntrs::REYTOTAL(71), age = 92, sex = 3, educ = 10),
+    ".+sex.+ must be a numeric vector of"
+  )
+
+  expect_error(
+    std_using_tscores(ntrs::REYTOTAL(71), age = 92, sex = "male", educ = 10),
+    ".+sex.+ must be a numeric vector of"
+  )
+})
+
+
+test_that("std_using_tscores generic alerts when age is not numeric", {
+  local_reproducible_output()
+
+  expect_error(
+    std_using_tscores(ntrs::REYTOTAL(71), age = "92", sex = 2, educ = 10),
+    ".+age.+ must be a numeric vector"
+  )
+})
+
+
+test_that("std_using_tscores generic alerts when educ is not numeric", {
+  local_reproducible_output()
+
+  expect_error(
+    std_using_tscores(
+      ntrs::REYTOTAL(71),
+      age = 90,
+      sex = 2,
+      educ = "highschool"
+    ),
+    ".+educ.+ must be a numeric vector"
+  )
+})
