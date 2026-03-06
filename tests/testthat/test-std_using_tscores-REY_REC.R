@@ -1,5 +1,5 @@
 test_that("std_using_tscores-REY1REC works", {
-  res <- REY1REC(8)
+  res <- ntrs::REY1REC(8)
 
   expect_equal(
     scale_scores(res),
@@ -19,7 +19,7 @@ test_that("std_using_tscores-REY1REC works", {
 
 
 test_that("std_using_tscores-REY2REC works", {
-  res <- REY2REC(7)
+  res <- ntrs::REY2REC(7)
 
   expect_equal(
     scale_scores(res),
@@ -38,7 +38,7 @@ test_that("std_using_tscores-REY2REC works", {
 })
 
 test_that("std_using_tscores-REY3REC works", {
-  res <- REY3REC(12)
+  res <- ntrs::REY3REC(12)
 
   expect_equal(
     scale_scores(res),
@@ -57,7 +57,7 @@ test_that("std_using_tscores-REY3REC works", {
 })
 
 test_that("std_using_tscores-REY4REC works", {
-  res <- REY4REC(15)
+  res <- ntrs::REY4REC(15)
 
   expect_equal(
     scale_scores(res),
@@ -77,7 +77,7 @@ test_that("std_using_tscores-REY4REC works", {
 
 
 test_that("std_using_tscores-REY5REC works", {
-  res <- REY5REC(1)
+  res <- ntrs::REY5REC(1)
 
   expect_equal(
     scale_scores(res),

@@ -1,21 +1,6 @@
 #' @include std_using_tscores.R
 NULL
 
-
-REY4REC <- ntrs::new_npsych_scores(
-  name = "REY4REC",
-  label = "Rey AVLT (Immediate) Trial 4 Total recall",
-  range = c(0, 15),
-  codes = c(
-    "Not assessed, optional" = 88,
-    "Physical problem" = 95,
-    "Cognitive/behavior problem" = 96,
-    "Other problem" = 97,
-    "Verbal refusal" = 98,
-    "Not available: UDS form submitted did not collect data in this way, or a skip pattern precludes response to this question" = -4
-  )
-)
-
 #' REY4REC T-score
 #'
 #' @param scores `REY4REC` scores object
@@ -26,7 +11,7 @@ REY4REC <- ntrs::new_npsych_scores(
 #' @returns ...
 #'
 #' @name std_using_tscores-REY4REC
-S7::method(std_using_tscores, REY4REC) <- function(
+S7::method(std_using_tscores, ntrs::REY4REC) <- function(
   scores,
   age,
   sex,
