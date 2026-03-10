@@ -13,6 +13,7 @@ NULL
 #' @name std_using_tscores-REYTOTAL
 S7::method(std_using_tscores, ntrs::REYTOTAL) <- function(
   scores,
+  ...,
   age,
   sex,
   educ

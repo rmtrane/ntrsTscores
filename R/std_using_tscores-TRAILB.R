@@ -13,6 +13,7 @@ NULL
 #' @name std_using_tscores-TRAILB
 S7::method(std_using_tscores, ntrs::TRAILB) <- function(
   scores,
+  ...,
   age,
   sex,
   educ

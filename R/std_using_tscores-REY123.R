@@ -21,10 +21,10 @@ REY123 <- ntrs::new_npsych_scores(
 #' @name std_using_tscores-REY123
 S7::method(std_using_tscores, REY123) <- function(
   scores,
+  ...,
   age,
   sex,
-  educ,
-  ...
+  educ
 ) {
   raw_scores <- as.numeric(scores)
 

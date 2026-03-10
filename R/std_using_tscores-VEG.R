@@ -13,6 +13,7 @@ NULL
 #' @name std_using_tscores-VEG
 S7::method(std_using_tscores, ntrs::VEG) <- function(
   scores,
+  ...,
   age,
   sex,
   educ

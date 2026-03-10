@@ -13,6 +13,7 @@ NULL
 #' @name std_using_tscores-WAIS
 S7::method(std_using_tscores, ntrs::WAIS) <- function(
   scores,
+  ...,
   age,
   sex,
   educ

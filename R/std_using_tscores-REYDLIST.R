@@ -13,6 +13,7 @@ NULL
 #' @name std_using_tscores-REYDLIST
 S7::method(std_using_tscores, ntrs::REYDLIST) <- function(
   scores,
+  ...,
   age,
   sex,
   educ
