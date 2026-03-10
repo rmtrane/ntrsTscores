@@ -12,9 +12,17 @@
 std_using_tscores <- S7::new_generic(
   "std_using_tscores",
   "scores",
-  fun = function(scores, age, sex, educ) {
-    ## Check and adjust covariates
+  fun = function(scores, ..., age, sex, educ) {
+    ## Note that ... is ignored
+    unused_params <- rlang::list2(...)
 
+    if (length(unused_params) > 0) {
+      cli::cli_warn(
+        "{.arg {names(unused_params)}} are not used when standardizing {.cls {S7::S7_class(scores)@name}} using tscores."
+      )
+    }
+
+    ## Check and adjust covariates
     if (!all(sex %in% c(1, 2))) {
       cli::cli_abort(
         "{.arg sex} must be a numeric vector of {.val 1}'s (male) and {.val 2}'s (female)."

@@ -4,7 +4,7 @@
 \alias{std_using_tscores}
 \title{Standardize using T-scores}
 \usage{
-std_using_tscores(scores, age, sex, educ)
+std_using_tscores(scores, age, sex, educ, ...)
 }
 \arguments{
 \item{scores}{A numeric vector of class \code{npscyh_scores} with subclass}

@@ -1,9 +1,11 @@
 #' @include std_using_tscores.R
 NULL
 
+#' @export
 REY123 <- ntrs::new_npsych_scores(
   "REY123",
   label = "Rey AVLT Trials 1-3 Totals",
+  domain = "Memory",
   range = c(0, 45)
 )
 
@@ -21,7 +23,8 @@ S7::method(std_using_tscores, REY123) <- function(
   scores,
   age,
   sex,
-  educ
+  educ,
+  ...
 ) {
   raw_scores <- as.numeric(scores)
 
