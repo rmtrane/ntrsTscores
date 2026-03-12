@@ -133,3 +133,26 @@ test_that("std_using_tscores-REYDREC works", {
     49
   )
 })
+
+
+test_that("std_using_tscores-REYAREC works", {
+  res <- ntrs::REYAREC(ntrs::calc_REYAREC(
+    reytcor = ntrs::REYTCOR(13),
+    reyfpos = ntrs::REYFPOS(2)
+  ))
+
+  expect_equal(
+    scale_scores(round(res)),
+    8
+  )
+
+  expect_equal(
+    std_using_tscores(
+      res,
+      age = 50,
+      sex = 2,
+      educ = 12
+    ),
+    37
+  )
+})

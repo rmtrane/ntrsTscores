@@ -39,6 +39,7 @@ Collate:
     'std_using_tscores-REY4REC.R'
     'std_using_tscores-REY5REC.R'
     'std_using_tscores-REY6REC.R'
+    'std_using_tscores-REYAREC.R'
     'std_using_tscores-REYDLIST.R'
     'std_using_tscores-REYDREC.R'
     'std_using_tscores-REYTOTAL.R'
