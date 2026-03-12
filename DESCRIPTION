@@ -13,6 +13,7 @@ RoxygenNote: 7.3.3
 Imports: 
     S7,
     Rdpack,
+    rlang,
     ntrs
 Depends: 
     R (>= 3.5)

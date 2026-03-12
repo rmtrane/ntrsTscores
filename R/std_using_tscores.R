@@ -4,6 +4,7 @@
 #' @param age numeric vector with age
 #' @param sex numeric vector of `1`'s (male) and `2`'s (female)
 #' @param educ numeric vector giving years of education
+#' @param ... Unused
 #'
 #' @returns
 #' The standardized value of `scores`, whose exact type depends on the specific S7 method called
