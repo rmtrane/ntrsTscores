@@ -1,7 +1,6 @@
 #' @include std_using_tscores.R
 NULL
 
-
 #' REY123 Test Scores
 #'
 #' @description Create a `REY123` object to hold the sum of REY1REC, REY2REC, and REY3REC scores.
