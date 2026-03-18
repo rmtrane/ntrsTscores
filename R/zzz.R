@@ -3,5 +3,5 @@
 }
 
 .onAttach <- function(...) {
-  ntrs::set_std_defaults(REY123(), method = "tscores")
+  ntrs::set_std_defaults(REY123(), method = "tscores", overwrite = TRUE)
 }
