@@ -8,6 +8,13 @@
 \description{
 What the package does (one paragraph).
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://rmtrane.github.io/ntrsTscores/}
+}
+
+}
 \author{
 \strong{Maintainer}: Ralph Møller Trane \email{rmtrane@gmail.com} (\href{https://orcid.org/0000-0001-7824-1785}{ORCID})
 

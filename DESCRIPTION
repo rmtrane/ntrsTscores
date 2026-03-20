@@ -49,3 +49,4 @@ Collate:
     'std_using_tscores-WAIS.R'
     'zzz.R'
 LazyData: true
+URL: https://rmtrane.github.io/ntrsTscores/
