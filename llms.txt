@@ -12,9 +12,7 @@ package includes specific implementations for different tests, such as
 the `ANIMALS` test, and ensures that the standardized scores are within
 a valid range.
 
-> \[!WARNING\]
->
-> ### Disclaimer
+> **Disclaimer**
 >
 > This R package started as the backbone of the visualization tool
 > included in the R package `NpsychAssessmentTool`, but we quickly
