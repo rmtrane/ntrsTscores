@@ -12,7 +12,8 @@ This package provides functions for standardizing neuropsychological test result
 
 The main function, `std_using_tscores()`, takes raw scores from various neuropsychological tests and applies the appropriate T-score adjustments based on demographic factors. The package includes specific implementations for different tests, such as the `ANIMALS` test, and ensures that the standardized scores are within a valid range.
 
-::: {.callout-warning collapse="true"}
+
+::: {.callout-warning}
 
 ## Disclaimer
 
