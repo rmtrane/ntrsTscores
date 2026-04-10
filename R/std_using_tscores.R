@@ -19,7 +19,7 @@ std_using_tscores <- S7::new_generic(
 
     if (length(unused_params) > 0) {
       cli::cli_warn(
-        "{.arg {names(unused_params)}} are not used when standardizing {.cls {S7::S7_class(scores)@name}} using tscores."
+        "{.arg {names(unused_params)}} {?is/are} not used when standardizing {.cls {S7::S7_class(scores)@name}} using tscores."
       )
     }
 
@@ -60,6 +60,13 @@ std_using_tscores <- S7::new_generic(
       educ <- pmin(pmax(educ, 8), 20)
     }
 
-    S7::S7_dispatch()
+    res <- S7::S7_dispatch()
+
+    ntrs::std_npsych_scores(
+      res,
+      scores_subclass = S7::S7_class(scores)@name,
+      description = "Standardized using T-scores adjusted for age, sex, and education.",
+      method = "tscores"
+    )
   }
 )

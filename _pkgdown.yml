@@ -1,0 +1,8 @@
+url: https://rmtrane.github.io/ntrsTscores/
+template:
+  bootstrap: 5
+
+navbar:
+  structure:
+    left: [home, reference]
+    right: [github, search]

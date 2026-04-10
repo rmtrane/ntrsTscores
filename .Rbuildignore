@@ -2,3 +2,6 @@
 data-raw/*
 ^\.github$
 .qmd$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$

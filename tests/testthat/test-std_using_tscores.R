@@ -1,3 +1,44 @@
+test_that("std_using_tscores warns when additional parameters are passed", {
+  local_reproducible_output()
+
+  expect_warning(
+    std_using_tscores(
+      ntrs::REYTOTAL(71),
+      age = 90,
+      sex = 2,
+      educ = 10,
+      extra_param = "extra"
+    ),
+    regexp = ".extra_param. is not used when standardizing.+REYTOTAL.+ using tscores."
+  )
+
+  expect_warning(
+    std_using_tscores(
+      ntrs::REYTOTAL(71),
+      age = 90,
+      sex = 2,
+      educ = 10,
+      extra_param_1 = "extra",
+      extra_param_2 = "extra2"
+    ),
+    regexp = ".extra_param_1. and .extra_param_2. are not used when standardizing.+REYTOTAL.+ using tscores."
+  )
+
+  expect_warning(
+    std_using_tscores(
+      ntrs::REYTOTAL(71),
+      age = 90,
+      sex = 2,
+      educ = 10,
+      extra_param_1 = "extra",
+      extra_param_2 = "extra2",
+      extra_param_3 = "extra3"
+    ),
+    regexp = ".extra_param_1., .extra_param_2., and .extra_param_3. are not used when standardizing.+REYTOTAL.+ using tscores."
+  )
+})
+
+
 test_that("std_using_tscores generic alerts when age outside of allowed range", {
   local_reproducible_output()
 
@@ -32,12 +73,10 @@ test_that("std_using_tscores generic alerts when age and educ outside of allowed
   local_reproducible_output()
 
   expect_message(
-    std_using_tscores(ntrs::REYTOTAL(72), age = 95, sex = 1, educ = 5),
-    ".+age.+ must be a numeric vector of values between 30 and 91. Values outside this range have been truncated."
-  )
-
-  expect_message(
-    res <- std_using_tscores(ntrs::REYTOTAL(72), age = 95, sex = 1, educ = 5),
+    expect_message(
+      res <- std_using_tscores(ntrs::REYTOTAL(72), age = 95, sex = 1, educ = 5),
+      regexp = ".+age.+ must be a numeric vector of values between 30 and 91. Values outside this range have been truncated.+"
+    ),
     ".+educ.+ must be a numeric vector of values between 8 and 20. Values outside this range have been truncated."
   )
 
