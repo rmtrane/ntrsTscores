@@ -22,20 +22,15 @@ ensures that the standardized scores are within a valid range.
 >
 > ### Disclaimer
 >
-> This R package started as the backbone of the visualization tool
-> included in the R package `NpsychAssessmentTool`, but we quickly
-> realized it might be of use as a standalone tool for other
-> researchers. It was therefore decided to package the most important
-> tools and methods separately, which resulted in this package. None of
-> the implementations here should be used in commercial products nor as
-> standalone medical advice. Also note this package is distributed under
+> None of the implementations here should be used in commercial products
+> nor as standalone medical advice. This package is distributed under
 > the [MIT Licence](./LICENSE.html), meaning the software is provided
 > “asis” and the authors are not liable for any claim, damages or other
 > liabaility arising from this software. Also, note that the authors
-> behind the T-scores implemented for some test scores request that the
-> scores are not edited, modified, translated or otherwise part of
-> derivative work without the prior written permission of Mayo Clinic.
-> For more on the use of the T-scores, contact [Nikki
+> behind the T-scores implemented here request that the scores are not
+> edited, modified, translated or otherwise part of derivative work
+> without the prior written permission of Mayo Clinic. For more on the
+> use of the T-scores, contact [Nikki
 > Stricker](mailto:Stricker.Nikki@mayo.edu) and/or see the [Mayo Clinic
 > Study of Aging website for more on data
 > sharing](https://www.mayo.edu/research/centers-programs/alzheimers-disease-research-center/research-activities/mayo-clinic-study-aging/for-researchers/data-sharing-resources).
