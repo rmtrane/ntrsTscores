@@ -30,7 +30,7 @@ Years with a Focus on the Boston Naming Test, Trail Making Test and
 Category Fluency.” *Journal of the International Neuropsychological
 Society : JINS*, **30**(4), 389.
 [doi:10.1017/S1355617723000760](https://doi.org/10.1017/S1355617723000760)
-, <http://www.ncbi.nlm.nih.gov/pubmed/38014536>. .
+. <http://www.ncbi.nlm.nih.gov/pubmed/38014536>. .
 
 ## References
 
@@ -41,4 +41,4 @@ Regression-Based Normative Data for Ages 30–91 Years with a Focus on the
 Boston Naming Test, Trail Making Test and Category Fluency.” *Journal of
 the International Neuropsychological Society : JINS*, **30**(4), 389.
 [doi:10.1017/S1355617723000760](https://doi.org/10.1017/S1355617723000760)
-, <http://www.ncbi.nlm.nih.gov/pubmed/38014536>.
+. <http://www.ncbi.nlm.nih.gov/pubmed/38014536>.
