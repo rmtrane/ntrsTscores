@@ -24,12 +24,13 @@ std_using_tscores <- S7::new_generic(
     }
 
     ## Check and adjust covariates
-    if (!all(sex %in% c(1, 2))) {
+    if (!all(sex %in% c(1, 2, 8, 9, NA))) {
       cli::cli_abort(
         "{.arg sex} must be a numeric vector of {.val 1}'s (male) and {.val 2}'s (female)."
       )
     }
     # Convert to T-score convention (0 = female, 1 = male)
+    sex[!sex %in% c(1, 2)] <- NA
     sex <- as.numeric(sex == 1)
 
     if (!is.numeric(age)) {
